@@ -1,1 +1,108 @@
+#SetTimeout Example1
+<html>  
+<head>  
+<title> setTimeout() method </title>  
+</head>  
+<body>  
+<h1> Hello World </h1>  
+<h3> This is an example of using the setTimeout() method </h3>  
+<p> Here, an alert dialog box will display after two seconds. </p>  
+  
+<script>  
+  
+var a;  
+  
+a = setTimeout(showMessage, 2000);  
+  
+function showMessage() {  
+alert(" Welcome to my Jaislin's Webpage ");  
+}  
+</script>  
+</body>  
+  
+</html>  
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#SetTimeout Example2
+<html>  
+<head>  
+<title> setTimeout() method </title>  
+</head>  
+<body>  
+<h1> Hello World :) :) </h1>   
+<p> Click the following button before 2 seconds to see the effect. </p>  
+<button onclick = "stop()"> Stop </button>  
+<script>  
+var a = setTimeout(fun1, 2000);  
+function fun1()  
+{  
+var win1 = window.open();  
+win1.document.write(" <h2> Welcome to the Jaislin's webpage</h2>");  
+setTimeout(function(){win1.close()}, 2000);  
+}  
+function stop() {  
+  clearTimeout(a);  
+}  
+</script>  
+  
+</body>  
+</html>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#SetInterval Function example1
+<!DOCTYPE html>
+<html>
+<head>
+  <title>setInterval() Method Example</title>
+</head>
+<body>
+  <h1>Hello World</h1>
+  <h3>This is an example of using the setInterval() method</h3>
+  <p>Here, the background color changes every 200 milliseconds.</p>
+
+  <script>
+    setInterval(changeColor, 200);
+
+    function changeColor() {
+      var body = document.body;
+      body.style.backgroundColor = body.style.backgroundColor === "lightblue" ? "lightgreen" : "lightblue";
+    }
+  </script>
+
+</body>
+
+</html>
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+#SetInterval Function example2
+<!DOCTYPE html>
+<html>
+<head>
+  <title>setInterval() Method Example</title>
+</head>
+<body>
+  <h1>Hello World</h1>
+  <h3>This is an example of using the setInterval() method</h3>
+  <p>Here, the background color changes every 200 milliseconds.</p>
+  <button onclick="stop()">Stop</button>
+
+  <script>
+    var intervalId = setInterval(changeColor, 200);
+
+    function changeColor() {
+      var body = document.body;
+      body.style.backgroundColor = body.style.backgroundColor === "lightblue" ? "lightgreen" : "lightblue";
+    }
+
+    function stop() {
+      clearInterval(intervalId);
+    }
+  </script>
+
+</body>
+
+</html>
+
 
