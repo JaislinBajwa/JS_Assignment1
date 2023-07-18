@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CloudEQ Webpage</title>
+  <style>
+     body {
+      background-color: #eaf2f8; /* Light blue color */
+    }
+    .company-info {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  </style>
+  <script>
+      function displayMessage() {
+      var message = "Welcome to CloudEQ!";
+      document.getElementById("message").textContent = message;
+      alert(message);
+    }
+    
+    function changeBackground() {
+      var body = document.body;
+      body.style.backgroundColor = "#fff"; /* Change background color to white */
+    }
+    
+    function handleInputChange() {
+      var input = document.getElementById("inputField");
+      var value = input.value;
+      console.log("Input changed:", value);
+    }
+  </script>
+</head>
+<body>
+  <h1>CloudEQ Webpage</h1>
+  <img src="https://recruiting.paylocity.com/Recruiting/Jobs/GetLogoFileById?logoFileStoreId=39261924" alt="CloudEQ Logo" width="200" height="200">
+  <p id="message"></p>
+  <div class="company-info">
+    <h1>About CloudEQ</h1>
+    <p>CloudEQ is a leading cloud computing company that provides innovative solutions for businesses worldwide.We embody the Emotional Quotient (EQ) emotional intelligence needed for a strong rapport and partnership by truly caring about our clients and their business like no other. We demonstrate this through empathy and understanding of their business goals and their people. It’s our depth of experience that leads to trust and it’s the trust in our people that leads to powerful results.</p>
+    <h1>How Leaders Make a Culture That Works</h1>
+    <p>A company’s culture is critical to the growth and longevity of the organization.  A good culture impacts everything: customers, costs, profitability, attrition, and employee satisfaction.  The responsibility for having a good or bad company culture resides with the executive leadership team.</p>
+  </div>
+  <button onclick="displayMessage()">Click Me!</button>
+  <a href="https://cloudeq.com/about-us">Go to about</a>
+  <button id="clickButton" onclick="displayMessage()">Click Me!</button>
+  <button id="changeBackgroundButton" onmousedown="changeBackground()">Change Background</button>
+  <input type="text" id="inputField" onchange="handleInputChange()">
+  
+</body>
+</html>
