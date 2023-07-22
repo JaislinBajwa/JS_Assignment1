@@ -69,7 +69,7 @@ console.log(myInstance.method2()); // Output: "Method 2"
 //Consturctor method
 class CompanyName {
   constructor() {
-    this.company = "Javatpoint";
+    this.company = "CloudEQ";
   }
 }
 
@@ -81,6 +81,6 @@ class Employee extends CompanyName {
   }
 }
 
-const emp = new Employee(1, "John");
+const emp = new Employee(1, "Jaislin");
 console.log(`${emp.id} ${emp.name} ${emp.company}`);
 
